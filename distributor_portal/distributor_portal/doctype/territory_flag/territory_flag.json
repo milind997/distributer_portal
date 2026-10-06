@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "format:DP-TF-{#####}",
+ "creation": "2026-10-05 22:24:13.489339",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "channel_partner",
+  "serial_no",
+  "outlet",
+  "holder_territory",
+  "outlet_territory",
+  "source_voucher",
+  "status",
+  "explanation",
+  "resolution"
+ ],
+ "fields": [
+  {
+   "fieldname": "channel_partner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Channel Partner",
+   "options": "Channel Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Serial No",
+   "options": "Partner Serial"
+  },
+  {
+   "fieldname": "outlet",
+   "fieldtype": "Link",
+   "label": "Outlet",
+   "options": "Channel Outlet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "holder_territory",
+   "fieldtype": "Link",
+   "label": "Holder Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "outlet_territory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Outlet Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "source_voucher",
+   "fieldtype": "Data",
+   "label": "Source Voucher"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nExplained\nAccepted\nAction taken"
+  },
+  {
+   "fieldname": "explanation",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  },
+  {
+   "fieldname": "resolution",
+   "fieldtype": "Small Text",
+   "label": "Resolution"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-05 22:24:13.489339",
+ "modified_by": "Administrator",
+ "module": "Distributor Portal",
+ "name": "Territory Flag",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Channel Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Channel Partner",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

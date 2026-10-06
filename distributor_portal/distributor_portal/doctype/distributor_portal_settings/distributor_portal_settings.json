@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "format:DP-DPS-{#####}",
+ "creation": "2026-10-05 22:24:11.365714",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "portal_title",
+  "logo",
+  "accent_colour",
+  "support_email",
+  "support_phone",
+  "company",
+  "price_list",
+  "territory_rule",
+  "outlet_approval_required",
+  "declaration_due_day",
+  "damage_window_days",
+  "damage_photos_required",
+  "credit_rule",
+  "minimum_order_reels",
+  "forecast_method",
+  "history_months",
+  "safety_stock_percent",
+  "forecast_day",
+  "default_warehouse"
+ ],
+ "fields": [
+  {
+   "default": "Distributor Portal",
+   "fieldname": "portal_title",
+   "fieldtype": "Data",
+   "label": "Portal Title"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "default": "#2563eb",
+   "fieldname": "accent_colour",
+   "fieldtype": "Color",
+   "label": "Accent Colour"
+  },
+  {
+   "fieldname": "support_email",
+   "fieldtype": "Data",
+   "label": "Support Email"
+  },
+  {
+   "fieldname": "support_phone",
+   "fieldtype": "Data",
+   "label": "Support Phone"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "default": "Warn and flag HQ",
+   "fieldname": "territory_rule",
+   "fieldtype": "Select",
+   "label": "Territory Rule",
+   "options": "Warn and flag HQ\nBlock the sale\nAllow, log only"
+  },
+  {
+   "default": "1",
+   "fieldname": "outlet_approval_required",
+   "fieldtype": "Check",
+   "label": "Outlet Approval Required"
+  },
+  {
+   "default": "5",
+   "fieldname": "declaration_due_day",
+   "fieldtype": "Int",
+   "label": "Declaration Due Day"
+  },
+  {
+   "default": "7",
+   "fieldname": "damage_window_days",
+   "fieldtype": "Int",
+   "label": "Damage Window Days"
+  },
+  {
+   "default": "1",
+   "fieldname": "damage_photos_required",
+   "fieldtype": "Check",
+   "label": "Damage Photos Required"
+  },
+  {
+   "default": "Hold for Accounts approval",
+   "fieldname": "credit_rule",
+   "fieldtype": "Select",
+   "label": "Credit Rule",
+   "options": "Hold for Accounts approval\nBlock submit"
+  },
+  {
+   "default": "1",
+   "fieldname": "minimum_order_reels",
+   "fieldtype": "Int",
+   "label": "Minimum Order Reels"
+  },
+  {
+   "default": "Weighted moving average",
+   "fieldname": "forecast_method",
+   "fieldtype": "Select",
+   "label": "Forecast Method",
+   "options": "Weighted moving average\nSimple moving average"
+  },
+  {
+   "default": "6",
+   "fieldname": "history_months",
+   "fieldtype": "Int",
+   "label": "History Months"
+  },
+  {
+   "default": "25",
+   "fieldname": "safety_stock_percent",
+   "fieldtype": "Percent",
+   "label": "Safety Stock Percent"
+  },
+  {
+   "default": "1",
+   "fieldname": "forecast_day",
+   "fieldtype": "Int",
+   "label": "Forecast Day"
+  },
+  {
+   "fieldname": "default_warehouse",
+   "label": "Dispatch Warehouse",
+   "fieldtype": "Link",
+   "options": "Warehouse"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-05 22:24:11.365714",
+ "modified_by": "Administrator",
+ "module": "Distributor Portal",
+ "name": "Distributor Portal Settings",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Channel Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

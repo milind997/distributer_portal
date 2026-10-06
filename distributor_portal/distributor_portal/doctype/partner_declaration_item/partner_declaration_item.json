@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-10-05 22:24:11.100351",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "expected",
+  "counted",
+  "difference",
+  "treatment"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Expected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "counted",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Counted"
+  },
+  {
+   "fieldname": "difference",
+   "fieldtype": "Int",
+   "label": "Difference",
+   "read_only": 1
+  },
+  {
+   "default": "Sold, not scanned",
+   "fieldname": "treatment",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Treatment",
+   "options": "Sold, not scanned\nDamage"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-05 22:24:11.100351",
+ "modified_by": "Administrator",
+ "module": "Distributor Portal",
+ "name": "Partner Declaration Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

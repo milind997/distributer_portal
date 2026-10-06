@@ -53,3 +53,16 @@ jspm_packages/
 
 # Aider AI Chat
 .aider*
+
+# Build dependencies and browser verification outputs
+node_modules/
+**/node_modules
+frontend/test-results/
+frontend/playwright-report/
+
+# Local caches and private runtime files
+.ruff_cache/
+.pytest_cache/
+.codebase-memory/
+.env.*
+*.log

@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "format:DP-PSL-{#####}",
+ "creation": "2026-10-05 22:24:13.267146",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "channel_partner",
+  "item_code",
+  "serial_no",
+  "posting_date",
+  "qty_reels",
+  "qty_m",
+  "movement",
+  "voucher_type",
+  "voucher_no",
+  "reversal_of",
+  "entry_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "channel_partner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Channel Partner",
+   "options": "Channel Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "label": "Serial No",
+   "options": "Partner Serial"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty_reels",
+   "fieldtype": "Int",
+   "label": "Qty Reels"
+  },
+  {
+   "fieldname": "qty_m",
+   "fieldtype": "Float",
+   "label": "Qty M"
+  },
+  {
+   "fieldname": "movement",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Movement",
+   "options": "Dispatch\nReceipt\nSale\nSale-Declared\nReturn\nDamage\nReversal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Data",
+   "label": "Voucher Type"
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Data",
+   "label": "Voucher No"
+  },
+  {
+   "fieldname": "reversal_of",
+   "fieldtype": "Link",
+   "label": "Reversal Of",
+   "options": "Partner Stock Ledger"
+  },
+  {
+   "fieldname": "entry_key",
+   "fieldtype": "Data",
+   "label": "Entry Key",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-05 22:24:13.267146",
+ "modified_by": "Administrator",
+ "module": "Distributor Portal",
+ "name": "Partner Stock Ledger",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Channel Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Channel Partner",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

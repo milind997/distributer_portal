@@ -1,0 +1,57 @@
+{
+ "app": "distributor_portal",
+ "charts": [],
+ "content": "[{\"id\": \"title\", \"type\": \"header\", \"data\": {\"text\": \"Distributor Portal\", \"col\": 12}}, {\"id\": \"s0\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Open Distributor Portal\", \"col\": 4}}, {\"id\": \"s1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Channel Partners\", \"col\": 4}}, {\"id\": \"s2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Portal Settings\", \"col\": 4}}]",
+ "creation": "2026-10-05 22:24:14.902900",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "package",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Distributor Portal",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2026-10-05 22:24:14.902900",
+ "modified_by": "Administrator",
+ "module": "Distributor Portal",
+ "name": "Distributor Portal",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Channel Manager"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "icon": "package",
+   "label": "Open Distributor Portal",
+   "type": "URL",
+   "url": "/distributor"
+  },
+  {
+   "doc_view": "",
+   "label": "Channel Partners",
+   "link_to": "Channel Partner",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Portal Settings",
+   "link_to": "Distributor Portal Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "Distributor Portal",
+ "type": "Workspace"
+}

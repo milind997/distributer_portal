@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "format:DP-PS-{#####}",
+ "creation": "2026-10-05 22:24:12.784119",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "serial_no",
+  "channel_partner",
+  "item_code",
+  "batch_no",
+  "length_m",
+  "status",
+  "delivery_note",
+  "received_on",
+  "sold_on",
+  "sold_to",
+  "last_voucher",
+  "return_previous_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Serial No",
+   "options": "Serial No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "channel_partner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Channel Partner",
+   "options": "Channel Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "label": "Batch No",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "length_m",
+   "fieldtype": "Float",
+   "label": "Length M"
+  },
+  {
+   "default": "In transit",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "In transit\nIn stock\nSold\nReturn pending\nReturned\nDamaged"
+  },
+  {
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "label": "Delivery Note",
+   "options": "Delivery Note"
+  },
+  {
+   "fieldname": "received_on",
+   "fieldtype": "Date",
+   "label": "Received On"
+  },
+  {
+   "fieldname": "sold_on",
+   "fieldtype": "Date",
+   "label": "Sold On"
+  },
+  {
+   "fieldname": "sold_to",
+   "fieldtype": "Link",
+   "label": "Sold To",
+   "options": "Channel Outlet"
+  },
+  {
+   "fieldname": "last_voucher",
+   "fieldtype": "Data",
+   "label": "Last Voucher"
+  },
+  {
+   "fieldname": "return_previous_status",
+   "fieldtype": "Data",
+   "label": "Return Previous Status"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-05 22:24:12.784119",
+ "modified_by": "Administrator",
+ "module": "Distributor Portal",
+ "name": "Partner Serial",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Channel Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Channel Partner",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "search_fields": "serial_no,item_code",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
